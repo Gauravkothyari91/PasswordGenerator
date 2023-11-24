@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#07070c] flex flex-col justify-center items-center mt-24">
+    <!-- Password Generator -->
+    <div class="card border border-white w-96 flex flex-col justify-center items-center">
+        <h1 class="text-white pb-3 mt-3 text-2xl">Password Generator</h1>
+        <input type="text" placeholder="Click On Generate Button" class="w-72 ">
+        <div class="btn flex gap-3 mt-6 text-white pb-6">
+            <div class="generate bg-purple-500 w-20 text-center rounded-md">Generate</div>
+            <div class="Copy bg-purple-500 w-[9rem] text-center rounded-md">Copy</div>
+        </div>
+            <div class="password">
+                <span class="text-white">Password Length</span>
+            <input type="number" value="8" name="Length" id="Length" class="bg-black border border-white w-10 h-5 text-white">
+            </div>
+            <div class="uppercaseletter">
+                <span class="text-white">Include uppercase letters</span>
+                <input type="checkbox" name="uppercase" id="uppercaseCb">
+            </div>
+            <div class="lowercaseletter">
+                <span class="text-white">Include lowercase letters</span>
+                <input type="checkbox" name="lowercase" id="lowercaseCb">
+            </div>
+            <div class="numbers">
+                <span class="text-white">Include numbers</span>
+                <input type="checkbox" name="number" id="digitsCb">
+            </div>
+            <div class="symbols pb-4">
+                <span class="text-white">Include symbols</span>
+                <input type="checkbox" name="symbols" id="specialsCb">
+            </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
